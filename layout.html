@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout</title>
+        <style>
+            .main{
+                width: 60%;
+                /* border: 1px solid green; */
+                text-align: center;
+                margin: auto;
+                margin-top: 2.5rem;
+            }
+            .page{
+                width: 100%;
+                /* border: 1px solid black; */
+                display: grid;
+                grid-template: 's1 s2 s3';
+                grid-template-columns: 30% 30% 30%;
+                grid-column-gap: 5%;
+            }
+            .page2{
+                width: 50%;
+                /* border: 1px solid black; */
+                display: grid;
+                grid-template: 's4 s5 s6 s7';
+                grid-template-columns: 25% 25% 25% 25%;
+                margin: 2% 25%;
+                /* padding: 0.8%; */
+                /* grid-column-gap: 5%; */
+            }
+            .page3{
+                width: 100%;
+                /* border: 1px solid black; */
+                display: grid;
+                grid-template: 's8 s9 s10';
+                grid-template-columns: 30% 30% 30%;
+                grid-column-gap: 5%;
+                margin-top: 5%;
+            }
+            .box,.box1,.box2{
+                background-color: rgb(223, 173, 8);
+                display: flex;
+                border-radius:3%;
+                margin-left: 1%;
+            }
+            .box1{
+                background-color: blue;
+            }
+            .box2{
+                background-color: rgb(0, 162, 255);
+            }
+            .b2{
+                height: 70px;
+            }
+            .b1{
+                width: 30%;
+               text-align: center;
+            }
+            .logo{
+                width: 60%;
+                height: 50px;
+                border-radius: 50%;
+                margin-top: 0.6rem;
+            }
+            .text1{
+                /* border: 1px solid black; */
+                font-size: 1.5rem;
+                font-weight: bold;
+                color:white;
+                margin-top: 10px;
+            }
+            .text2{
+                color: white;
+            }
+            .heading{
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: rgb(74, 4, 124);
+                margin-top: 4%;
+            }
+            #b1{
+                grid-area: s1;
+            }
+            #b2{
+                grid-area: s2;
+            }
+            #b3{
+                grid-area: s3;
+            }
+            #b4{
+                grid-area: s4;
+                color: white;
+            }
+            #b5{
+                grid-area: s5;
+            }
+            #b6{
+                grid-area: s6;
+            }
+            #b7{
+                grid-area: s7;
+            }
+            #b8{
+                grid-area: s8;
+            }
+            #b9{
+                grid-area: s9;
+            }
+            #b10{
+                grid-area: s10;
+            }
+            .box4{
+                background-color: rgb(0, 195, 255);
+                height: 40px;
+            }
+            .text3,.text4{
+                margin-top: 0.7rem;
+            }
+            /* .box8{
+                border: 1px solid blue;
+            } */
+            .pic{
+                width: 100%;
+                height: 170px;
+                border-radius: 8px;
+            }
+            .text5,.text6,.text7{
+                text-align: left;
+                margin:0% 8%;
+            }
+            .text5{
+                margin-top: 8%;
+            }
+            .text6{
+                margin-top: 5%;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+            .text7{
+                margin-top: 5%;
+                color: grey;
+            }
+            .button{
+                width: 40%;
+                border: rgb(8, 147, 189) 1px solid;
+                margin: 5% 30%;
+                padding: 1%;
+            }
+            .text8{
+                color: rgb(0, 183, 255);
+            }
+            @media (max-width:920px) {
+                .page{
+                    grid-template: 's1 s2'
+                                    's3 s3';
+                }
+                .page2{
+                    grid-template: 's4 s5'
+                                    's6 s7';
+                }
+                .page3{
+                    grid-template: 's8 s9'
+                                    's10 s10';
+                }
+            }
+            @media (max-width:600px) {
+                .page{
+                    grid-template: 's1'
+                                    's2'
+                                    's3';
+                }
+                .page2{
+                    grid-template: 's4'
+                                    's5'
+                                    's6'
+                                    's7';
+                }
+                .page3{
+                    grid-template: 's8'
+                                    's9'
+                                    's10';
+                }
+            }
+        </style>
+    </head>
+    <Body>
+        <div class="main">
+            <div class="page">
+                <div class="box" id="b1">
+                    <div class="b1">
+                        <img class="logo"
+                            src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="b2">
+                        <div class="text1">Scholership</div>
+                        <div class="text2">Available</div>
+            
+                    </div>
+                </div>
+                <div class="box1" id="b2">
+                    <div class="b1">
+                        <img class="logo"
+                            src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="b2">
+                        <div class="text1">Scholership</div>
+                        <div class="text2">Available</div>
+            
+                    </div>
+                </div>
+                <div class="box2" id="b3">
+                    <div class="b1">
+                        <img class="logo"
+                            src="https://images.unsplash.com/photo-1545231027-637d2f6210f8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                    <div class="b2">
+                        <div class="text1">Scholership</div>
+                        <div class="text2">Available</div>
+            
+                    </div>
+                </div>
+            </div>
+            <div class="heading">Popular Program</div>
+            <div class="page2">
+                <div class="box4" id="b4">
+                    <div class="text3">Graduate</div>
+                </div>
+                <div class="box5" id="b5">
+                    <div class="text4">Postgraduate</div>
+                </div>
+                <div class="box5" id="b6">
+                    <div class="text4">PHD Scholership</div>
+                </div>
+                <div class="box5" id="b7">
+                    <div class="text4">Training</div>
+                </div>
+            </div>
+            <div class="page3">
+                <div class="box8" id="b8">
+                    <img class="pic" src="https://images.unsplash.com/photo-1580795479025-93d13fd9aa6c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGFic3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="chemical engineer">
+                    <div class="text5">Agriculture</div>
+                    <div class="text6">Chemical engineering</div>
+                    <div class="text7">Lorem ipsum dolor sit amet consectetur adipisicing laboriosam iusto nostrum veritatis.</div>
+                    <div class="button">
+                        <div class="text8">APPLY NOW</div>
+                    </div>
+                </div>
+                <div class="box8" id="b9">
+                    <img class="pic"
+                        src="https://images.unsplash.com/photo-1581092333203-42374bcf7d89?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWVjaGFuaWNhbCUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="mechanical engineer">
+                    <div class="text5">Agriculture</div>
+                    <div class="text6">Mechanical engineering</div>
+                    <div class="text7">Lorem ipsum dolor sit amet consectetur adipisicing laboriosam iusto nostrum veritatis.</div>
+                    <div class="button">
+                        <div class="text8">APPLY NOW</div>
+                    </div>
+                </div>
+                <div class="box8" id="b10">
+                    <img class="pic"
+                        src="https://images.unsplash.com/photo-1583912086215-bef63f5b346e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGJpb3RlY2hub2xvZ3l8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="bio engineer">
+                    <div class="text5">Agriculture</div>
+                    <div class="text6">Bio engineering</div>
+                    <div class="text7">Lorem ipsum dolor sit amet consectetur adipisicing laboriosam iusto nostrum veritatis.</div>
+                    <div class="button">
+                        <div class="text8">APPLY NOW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Body>
+</html>
